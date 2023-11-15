@@ -1,3 +1,9 @@
+![forsale](https://github.com/lpb3393/Home_Renovations/blob/main/photos/forsale.jpg)
+
+
+
+
+
 # Business Understanding
 
 This project is to show Century 21 Real Estate that when trying to sell a home, maximizing profit is typically a high priority and rennovations are a key way that to ensure homeowners are getting the most they can from their listing their home. Renovations are important when trying to resell a home for several reasons: 
