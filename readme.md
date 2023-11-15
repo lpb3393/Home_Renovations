@@ -25,6 +25,7 @@ After going through the data, I created a new table with just the fields I was i
 # Exploratory Data Analysis
 
 When starting the analysis, I wanted to first see which fields were most strongly correlated to "price" and graph those field to see if they showed a linear relationship. I then created the OLS model several times, trying to increase the R-Squared value each time by adding variables to the model and decreasing the P Value. One way I did that was by creating One Hot Codes for a conditional variable "Condition." This added four new variables to the model and increased the R-Squared value significantly.
+![initialmodel]
 
 
 # Conclusions
