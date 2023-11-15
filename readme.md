@@ -16,6 +16,8 @@ The square footage, number of bedrooms, and number of bathrooms are essential cr
 
 This project uses the King County House Sales dataset, which describes homes in the area with attributes such as, price, bedrooms, bathrooms square footage, etc. but not all of these columns are important or influence the price of a house. First I am going to go through the dataset and determine what I find to be most useful and relavent to the analysis. Once I establish what is needed, I will clean up and transform the data to best fit into the OLS model. 
 
+![kingcounty](https://github.com/lpb3393/Home_Renovations/blob/main/photos/kingcounty.png)
+
 
 # Data Preparation
 
@@ -25,7 +27,19 @@ After going through the data, I created a new table with just the fields I was i
 # Exploratory Data Analysis
 
 When starting the analysis, I wanted to first see which fields were most strongly correlated to "price" and graph those field to see if they showed a linear relationship. I then created the OLS model several times, trying to increase the R-Squared value each time by adding variables to the model and decreasing the P Value. One way I did that was by creating One Hot Codes for a conditional variable "Condition." This added four new variables to the model and increased the R-Squared value significantly.
-![initialmodel]
+
+
+This is the initial model that was created. There is only one variable and the R-Squared value is only 37%, so from here I added more variables to increase this percentage.
+![initialmodel](https://github.com/lpb3393/Home_Renovations/blob/main/photos/initialmodel.JPG)
+![BaselineModel](https://github.com/lpb3393/Home_Renovations/blob/main/photos/BaselineModel.JPG)
+
+
+
+The final model was created using 10 variables and the R-Squared value increased significantly by almost 4 points. All of the One Hot Codes were used in this model besides "condition_Fair". The p-value was not considered statistically significant, therefore I dropped it from the final analysis.
+
+![finalmodel](https://github.com/lpb3393/Home_Renovations/blob/main/photos/finalmodel.JPG)
+
+![finalregressionplot](https://github.com/lpb3393/Home_Renovations/blob/main/photos/finalregressionplot.JPG)
 
 
 # Conclusions
@@ -49,11 +63,13 @@ If a homeowner is looking to sell their house and is wanting to maximize potenti
 Adding more interaction variables could be beneficial for the performance of the model. Since the condition of the house had such an impact on the price, it might be interesting to see what kind of effect some environmental factors might have on the price, as they could be pretty significant. Also, possibly including economic information for this region could be very informative because home values have been on such a rollercoster since the pandemic. 
 
 
+## For More Information
+See the full analysis in the [Jupyter Notebook](https://github.com/lpb3393/Home_Renovations/blob/main/Home%20Renovations.ipynb) or review the [presentation](https://github.com/lpb3393/Home_Renovations/blob/main/Home%20Renovations%20Presentation.pdf)
 
 ```
-├── data
-├── images
-├── README.md
-├── .pdf
-└── .ipynb
+├── photos
+├── .gitignore
+├── Home Renovations Presentation.pdf
+├── Home Renovations.ipynb
+└── readme.md
 ```
